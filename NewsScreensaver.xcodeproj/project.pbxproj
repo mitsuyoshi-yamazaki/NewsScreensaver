@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */; };
 		EDA3E4641F8CE02B00871600 /* IBInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */; };
+		EDA3E4661F8CE09E00871600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4651F8CE09E00871600 /* ContentView.swift */; };
+		EDA3E4681F8CE0A900871600 /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA3E4671F8CE0A900871600 /* ContentView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		EDA3E45A1F8CD89400871600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsScreensaverView.swift; sourceTree = "<group>"; };
 		EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBInstantiatable.swift; sourceTree = "<group>"; };
+		EDA3E4651F8CE09E00871600 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EDA3E4671F8CE0A900871600 /* ContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */,
+				EDA3E4651F8CE09E00871600 /* ContentView.swift */,
+				EDA3E4671F8CE0A900871600 /* ContentView.xib */,
 				EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */,
 				EDA3E45A1F8CD89400871600 /* Info.plist */,
 			);
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA3E4681F8CE0A900871600 /* ContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +160,7 @@
 			files = (
 				EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */,
 				EDA3E4641F8CE02B00871600 /* IBInstantiatable.swift in Sources */,
+				EDA3E4661F8CE09E00871600 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
