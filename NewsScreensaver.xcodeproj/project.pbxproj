@@ -77,6 +77,7 @@
 				EDA3E44F1F8CD89400871600 /* Frameworks */,
 				EDA3E4501F8CD89400871600 /* Headers */,
 				EDA3E4511F8CD89400871600 /* Resources */,
+				EDA3E4601F8CDAD300871600 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,6 +129,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDA3E4601F8CDAD300871600 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "open -W \"${CODESIGNING_FOLDER_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDA3E44E1F8CD89400871600 /* Sources */ = {
@@ -273,6 +290,7 @@
 				EDA3E45F1F8CD89400871600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
