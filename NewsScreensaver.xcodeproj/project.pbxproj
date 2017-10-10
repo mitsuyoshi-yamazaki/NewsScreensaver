@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDA3E4571F8CD89400871600 /* NewsScreensaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA3E4561F8CD89400871600 /* NewsScreensaverView.h */; };
-		EDA3E4591F8CD89400871600 /* NewsScreensaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4581F8CD89400871600 /* NewsScreensaverView.m */; };
+		EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDA3E4531F8CD89400871600 /* NewsScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDA3E4561F8CD89400871600 /* NewsScreensaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsScreensaverView.h; sourceTree = "<group>"; };
-		EDA3E4581F8CD89400871600 /* NewsScreensaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsScreensaverView.m; sourceTree = "<group>"; };
 		EDA3E45A1F8CD89400871600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsScreensaverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +46,7 @@
 		EDA3E4551F8CD89400871600 /* NewsScreensaver */ = {
 			isa = PBXGroup;
 			children = (
-				EDA3E4561F8CD89400871600 /* NewsScreensaverView.h */,
-				EDA3E4581F8CD89400871600 /* NewsScreensaverView.m */,
+				EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */,
 				EDA3E45A1F8CD89400871600 /* Info.plist */,
 			);
 			path = NewsScreensaver;
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA3E4571F8CD89400871600 /* NewsScreensaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +95,7 @@
 				TargetAttributes = {
 					EDA3E4521F8CD89400871600 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -151,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA3E4591F8CD89400871600 /* NewsScreensaverView.m in Sources */,
+				EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,11 +247,16 @@
 		EDA3E45E1F8CD89400871600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NewsScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.NewsScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -262,11 +264,15 @@
 		EDA3E45F1F8CD89400871600 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NewsScreensaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mitsuyoshi.NewsScreensaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
