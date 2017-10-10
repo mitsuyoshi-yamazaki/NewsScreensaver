@@ -11,7 +11,8 @@
 		EDA3E4641F8CE02B00871600 /* IBInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */; };
 		EDA3E4661F8CE09E00871600 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4651F8CE09E00871600 /* ContentView.swift */; };
 		EDA3E4681F8CE0A900871600 /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA3E4671F8CE0A900871600 /* ContentView.xib */; };
-		EDA3E46B1F8CE25100871600 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA3E46A1F8CE25100871600 /* WebKit.framework */; };
+		EDA3E4741F8CEA5200871600 /* 002.pdf in Resources */ = {isa = PBXBuildFile; fileRef = EDA3E4731F8CEA5200871600 /* 002.pdf */; };
+		EDA3E4761F8CF21500871600 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA3E4751F8CF21500871600 /* Quartz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		EDA3E4651F8CE09E00871600 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDA3E4671F8CE0A900871600 /* ContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
 		EDA3E46A1F8CE25100871600 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EDA3E4731F8CEA5200871600 /* 002.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = 002.pdf; path = tmp/002.pdf; sourceTree = SOURCE_ROOT; };
+		EDA3E4751F8CF21500871600 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA3E46B1F8CE25100871600 /* WebKit.framework in Frameworks */,
+				EDA3E4761F8CF21500871600 /* Quartz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 				EDA3E4671F8CE0A900871600 /* ContentView.xib */,
 				EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */,
 				EDA3E45A1F8CD89400871600 /* Info.plist */,
+				EDA3E46C1F8CE3C200871600 /* Resources */,
 			);
 			path = NewsScreensaver;
 			sourceTree = "<group>";
@@ -68,9 +72,18 @@
 		EDA3E4691F8CE25100871600 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDA3E4751F8CF21500871600 /* Quartz.framework */,
 				EDA3E46A1F8CE25100871600 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA3E46C1F8CE3C200871600 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EDA3E4731F8CEA5200871600 /* 002.pdf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA3E4681F8CE0A900871600 /* ContentView.xib in Resources */,
+				EDA3E4741F8CEA5200871600 /* 002.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

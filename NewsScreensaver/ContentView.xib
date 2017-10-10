@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
-        <plugIn identifier="com.apple.WebKit2IBPlugin" version="12121"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,22 +14,18 @@
             <rect key="frame" x="0.0" y="0.0" width="1000" height="800"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejn-2z-U3q">
+                <pdfView autoresizesSubviews="NO" displayMode="singlePage" autoScales="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3w-uv-bA7">
                     <rect key="frame" x="0.0" y="0.0" width="1000" height="800"/>
-                    <wkWebViewConfiguration key="configuration">
-                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                        <wkPreferences key="preferences"/>
-                    </wkWebViewConfiguration>
-                </wkWebView>
+                </pdfView>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ejn-2z-U3q" secondAttribute="bottom" id="H13-Jg-zRF"/>
-                <constraint firstItem="ejn-2z-U3q" firstAttribute="top" secondItem="E0C-lV-8hA" secondAttribute="top" id="kMg-JG-wmt"/>
-                <constraint firstItem="ejn-2z-U3q" firstAttribute="leading" secondItem="E0C-lV-8hA" secondAttribute="leading" id="ruS-JS-o8d"/>
-                <constraint firstAttribute="trailing" secondItem="ejn-2z-U3q" secondAttribute="trailing" id="uEO-Cb-pCd"/>
+                <constraint firstItem="i3w-uv-bA7" firstAttribute="leading" secondItem="E0C-lV-8hA" secondAttribute="leading" id="7Bl-se-0CP"/>
+                <constraint firstAttribute="bottom" secondItem="i3w-uv-bA7" secondAttribute="bottom" id="7YE-wg-ql8"/>
+                <constraint firstAttribute="trailing" secondItem="i3w-uv-bA7" secondAttribute="trailing" id="Myl-JD-n73"/>
+                <constraint firstItem="i3w-uv-bA7" firstAttribute="top" secondItem="E0C-lV-8hA" secondAttribute="top" id="OZZ-u0-cjj"/>
             </constraints>
             <connections>
-                <outlet property="webView" destination="ejn-2z-U3q" id="dkj-qV-3zn"/>
+                <outlet property="pdfView" destination="i3w-uv-bA7" id="LjL-ao-8Ln"/>
             </connections>
             <point key="canvasLocation" x="9" y="162"/>
         </customView>

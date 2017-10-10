@@ -7,6 +7,20 @@
 //
 
 import Cocoa
+import Quartz
 
 final class ContentView: NSView, IBInstantiatable {
+  
+  @IBOutlet private weak var pdfView: PDFView! {
+    didSet {
+      let url = Bundle.init(for: type(of: self)).url(forResource: "002", withExtension: "pdf")!
+      let document = PDFDocument.init(url: url)!
+      pdfView.document = document
+      pdfView.backgroundColor = .white
+    }
+  }
+  
+  func showNextPage() {
+    pdfView.goToNextPage(self)
+  }
 }

@@ -34,7 +34,7 @@ class NewsScreensaverView: ScreenSaverView {
   override var animationTimeInterval: TimeInterval {
     set {}
     get {
-      return 1.0 / 30.0
+      return 2.0
     }
   }
   
@@ -47,7 +47,7 @@ class NewsScreensaverView: ScreenSaverView {
   }
   
   override func animateOneFrame() {
-    return
+    contentView.showNextPage()
   }
   
   override func hasConfigureSheet() -> Bool {
