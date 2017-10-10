@@ -11,14 +11,11 @@ import ScreenSaver
 
 class NewsScreensaverView: ScreenSaverView {
   
-  required init?(coder: NSCoder) {
-    super.init(coder: coder)
-    self.animationTimeInterval = 1.0 / 30.0
-  }
-  
-  override init?(frame: NSRect, isPreview: Bool) {
-    super.init(frame: frame, isPreview: isPreview)
-    self.animationTimeInterval = 1.0 / 30.0
+  override var animationTimeInterval: TimeInterval {
+    set {}
+    get {
+      return 1.0 / 30.0
+    }
   }
   
   override func startAnimation() {
@@ -27,10 +24,6 @@ class NewsScreensaverView: ScreenSaverView {
   
   override func stopAnimation() {
     super.stopAnimation()
-  }
-  
-  override func draw(_ rect: NSRect) {
-    super.draw(rect)
   }
   
   override func animateOneFrame() {
@@ -44,5 +37,4 @@ class NewsScreensaverView: ScreenSaverView {
   override func configureSheet() -> NSWindow? {
     return nil
   }
-  
 }
