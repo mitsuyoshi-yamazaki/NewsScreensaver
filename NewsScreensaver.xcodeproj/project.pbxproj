@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */; };
+		EDA3E4641F8CE02B00871600 /* IBInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDA3E4531F8CD89400871600 /* NewsScreensaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsScreensaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA3E45A1F8CD89400871600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsScreensaverView.swift; sourceTree = "<group>"; };
+		EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBInstantiatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA3E4611F8CDB4600871600 /* NewsScreensaverView.swift */,
+				EDA3E4631F8CE02B00871600 /* IBInstantiatable.swift */,
 				EDA3E45A1F8CD89400871600 /* Info.plist */,
 			);
 			path = NewsScreensaver;
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA3E4621F8CDB4600871600 /* NewsScreensaverView.swift in Sources */,
+				EDA3E4641F8CE02B00871600 /* IBInstantiatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
